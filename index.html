@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apify Codify - Universal Browser Automation Pipeline</title>
+  <meta name="description"
+    content="Complete end-to-end browser automation pipeline running in browser. From rapid prototyping to sophisticated automation deployments.">
+  <link rel="stylesheet" href="./design/styles/tokens.css">
+  <link rel="stylesheet" href="./design/styles/base.css">
+  <link rel="stylesheet" href="./design/styles/utilities.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navigation">
+    <div class="container">
+      <div class="navigation-inner">
+        <a href="#" class="navigation-logo">Apify/Codify</a>
+
+        <button class="navigation-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navigation-menu">
+          <ul class="navigation-links">
+            <li><a href="#features" class="navigation-link">Features</a></li>
+            <li><a href="#how-it-works" class="navigation-link">How It Works</a></li>
+            <li><a href="#use-cases" class="navigation-link">Use Cases</a></li>
+            <li><a href="https://github.com/cybairfly" target="_blank" class="navigation-link">GitHub</a></li>
+          </ul>
+
+          <a href="#waitlist" class="btn btn-primary btn-sm">
+            Join Waitlist →
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">[ LIMITED PREVIEW ]</div>
+
+          <h1 class="hero-headline">
+            BROWSER²
+          </h1>
+
+          <h2 class="hero-subheadline">
+            AUTOMATION²
+          </h2>
+
+          <p class="hero-description">
+            Complete browser automation pipeline running inside browser.
+            From rapid prototyping and quick automation scripts to sophisticated automation deployments.
+            Self-host or run on Apify.
+          </p>
+
+          <div class="hero-decoration" aria-hidden="true">
+            <pre class="ascii-art spinning">/ Automate Anything <span class="spinner">|</span></pre>
+          </div>
+
+          <div class="hero-actions mt-4">
+            <a href="#waitlist" class="btn btn-primary">
+              Sign me up →
+              <!-- Register Interest → -->
+            </a>
+            <!-- <a href="https://apify.com/cyberfly" class="btn btn-secondary">
+              Try on Apify
+            </a> -->
+          </div>
+          <p class="text-center text-sm mt-4">
+            <a href="https://apify.com/cyberfly" class="text-secondary">
+              <!-- Unable to try it now on Apify? -->
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="py-8 border-b" style="border-color: var(--color-border);">
+      <div class="container">
+        <p class="text-center text-xs uppercase tracking-wider text-primary mb-4">
+          RUNNING ON OPEN SOURCE
+        </p>
+        <div class="flex justify-center gap-8 flex-wrap items-center" style="opacity: 0.6;">
+          <span class="text-sm font-mono">Apify SDK</span>
+          <span class="text-sm font-mono">Playwright</span>
+          <span class="text-sm font-mono">Puppeteer</span>
+          <span class="text-sm font-mono">Crawlee</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem/Solution -->
+    <section class="py-16">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="text-xs uppercase tracking-wider text-accent mb-4 font-mono">[ THE CHALLENGE ]</p>
+          <h2 class="text-4xl font-black text-primary mb-6">
+            WHY?
+          </h2>
+        </div>
+
+        <div class="two-column-grid">
+          <div class="problem-card">
+            <div class="problem-icon" aria-hidden="true">
+              <pre class="ascii-art text-error" style="color: red;">╔═══╗
+║ ✗ ║
+╚═══╝</pre>
+            </div>
+            <h3 class="text-xl font-bold text-primary mb-3">The Problem</h3>
+            <ul class="problem-list">
+              <li>→ Agents can be useful but are not very reliable</li>
+              <li>→ Code is more robust but requires more effort</li>
+              <li>→ Manual automation workflows are inefficient</li>
+            </ul>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon" aria-hidden="true">
+              <pre class="ascii-art text-accent" style="color: lime;">╔═══╗
+║ ✓ ║
+╚═══╝</pre>
+            </div>
+            <h3 class="text-xl font-bold text-primary mb-3">The Solution</h3>
+            <ul class="solution-list">
+              <li>→ Automatic pipeline to codify browser actions</li>
+              <li>→ Replay actions in real time after recording</li>
+              <li>→ From zero-code to some-code as needed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features -->
+    <section id="features" class="py-16 bg-secondary">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="text-xs uppercase tracking-wider text-accent mb-4 font-mono">[ FEATURES ]</p>
+          <h2 class="text-4xl font-black text-primary mb-4">
+            AUTOMATING THE AUTOMATION
+          </h2>
+          <!-- <p class="text-base text-secondary max-w-2xl mx-auto">
+            Unite and streamline your automation workflows with powerful tools.
+          </p> -->
+        </div>
+
+        <div class="features-grid">
+          <!-- Agent Mode -->
+          <div class="feature-card">
+            <div class="feature-ascii" aria-hidden="true">
+              <pre>@  @
+ @@  @
+@  @@</pre>
+            </div>
+            <h3 class="feature-title">Agent</h3>
+            <p class="feature-description">
+              Perform browser actions based on recorded scripts and user stories.
+            </p>
+            <span class="feature-badge">PARTIALLY FUNCTIONAL</span>
+          </div>
+
+          <!-- Coder Mode -->
+          <div class="feature-card feature-card-highlight">
+            <div class="feature-ascii" aria-hidden="true">
+              <pre>╔═══════╗
+╠═══════╣
+║   ✓   ║
+╚═══════╝</pre>
+            </div>
+            <h3 class="feature-title">Coder</h3>
+            <p class="feature-description">
+              Encode browser actions into dependable and reproducible automations.
+            </p>
+            <span class="feature-badge">ACTIVE DEV</span>
+          </div>
+
+          <!-- Universal Framework -->
+          <div class="feature-card">
+            <div class="feature-ascii" aria-hidden="true">
+              <pre>======
+========
+=== ===</pre>
+            </div>
+            <h3 class="feature-title">Complete Solution</h3>
+            <p class="feature-description">
+              Complete browser/less automation pipeline. Self-host or run in the cloud.
+            </p>
+            <span class="feature-badge">STABLE</span>
+          </div>
+
+          <!-- Real-Time Monitoring -->
+          <div class="feature-card">
+            <div class="feature-ascii" aria-hidden="true">
+              <pre>^  ^
+ ^^  ^
+^  ^^</pre>
+            </div>
+            <h3 class="feature-title">Real-time Monitoring</h3>
+            <p class="feature-description">
+              Automated logging and debugging. Display streaming for visual inspection. Always know what's happening in
+              the cloud!
+            </p>
+            <span class="feature-badge">STABLE</span>
+          </div>
+
+          <!-- Session Management -->
+          <div class="feature-card">
+            <div class="feature-ascii" aria-hidden="true">
+              <pre>[===]
+[===]
+[===]</pre>
+            </div>
+            <h3 class="feature-title">Session Management</h3>
+            <p class="feature-description">
+              Automatic session rotation, proxy management, fingerprint generation. Built for high reliability at scale.
+            </p>
+            <span class="feature-badge">STABLE</span>
+          </div>
+
+          <!-- Error Recovery -->
+          <div class="feature-card">
+            <div class="feature-ascii" aria-hidden="true">
+              <pre>(o_o)
+ ---
+(o_o)</pre>
+            </div>
+            <h3 class="feature-title">Smart Recovery</h3>
+            <p class="feature-description">
+              Comprehensive error handling, automatic retry logic, session retirement. Automation that keeps running.
+            </p>
+            <span class="feature-badge">STABLE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="text-xs uppercase tracking-wider text-accent mb-4 font-mono">[ WORKFLOW ]</p>
+          <h2 class="text-4xl font-black text-primary mb-4">
+            HOW IT WORKS
+          </h2>
+        </div>
+
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-number">01</div>
+            <h3 class="workflow-title">Record or Code</h3>
+            <p class="workflow-description">
+              Use Coder mode to record actions within the browser, or write your automation scripts directly.
+            </p>
+            <div class="workflow-ascii" aria-hidden="true">
+              <pre class="text-xs">>>> Record</pre>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <div class="workflow-number">02</div>
+            <h3 class="workflow-title">Generate & Clean</h3>
+            <p class="workflow-description">
+              Automatic code extraction and cleaning pipeline transforms recordings into production-ready scripts.
+            </p>
+            <div class="workflow-ascii" aria-hidden="true">
+              <pre class="text-xs">>>> Clean</pre>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <div class="workflow-number">03</div>
+            <h3 class="workflow-title">Deploy & Scale</h3>
+            <p class="workflow-description">
+              Deploy on Apify cloud or self-host. Leverage horizontal scalability for massive parallelization.
+            </p>
+            <div class="workflow-ascii" aria-hidden="true">
+              <pre class="text-xs">>>> Deploy</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="py-16 bg-secondary">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="text-xs uppercase tracking-wider text-accent mb-4 font-mono">[ USE CASES ]</p>
+          <h2 class="text-4xl font-black text-primary">
+            BUILT FOR SCALE
+          </h2>
+        </div>
+
+        <div class="use-cases-grid">
+          <div class="use-case">
+            <h4 class="use-case-title">Multi-Target Automation</h4>
+            <p class="use-case-description">
+              Same task across dozens of websites with maximum code reuse.
+            </p>
+          </div>
+
+          <div class="use-case">
+            <h4 class="use-case-title">Credential Validation</h4>
+            <p class="use-case-description">
+              Check login validity across services with automatic session handling.
+            </p>
+          </div>
+
+          <div class="use-case">
+            <h4 class="use-case-title">Payment Processing</h4>
+            <p class="use-case-description">
+              Automated bill payments for multiple providers with robust error handling.
+            </p>
+          </div>
+
+          <div class="use-case">
+            <h4 class="use-case-title">E-commerce Automation</h4>
+            <p class="use-case-description">
+              Product customization, order tracking, inventory monitoring at scale.
+            </p>
+          </div>
+
+          <div class="use-case">
+            <h4 class="use-case-title">Subscription Management</h4>
+            <p class="use-case-description">
+              Monitor and modify subscriptions across platforms automatically.
+            </p>
+          </div>
+
+          <div class="use-case">
+            <h4 class="use-case-title">Browser (less) RPA</h4>
+            <p class="use-case-description">
+              Browser automation workflows requiring robustness and high reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="py-16">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="text-xs uppercase tracking-wider text-accent mb-4 font-mono">[ ARCHITECTURE ]</p>
+          <h2 class="text-4xl font-black text-primary mb-4">
+            SOLID FOUNDATIONS
+          </h2>
+        </div>
+
+        <div class="architecture-diagram">
+          <div class="arch-layer">
+            <div class="arch-title">Agent</div>
+            <p class="arch-description">Browser agent without the agentic uncertainty</p>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer">
+            <div class="arch-title">Coder</div>
+            <p class="arch-description">Reusable and predictable automation scripts</p>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <!-- <div class="arch-layer">
+            <div class="arch-title">Agent</div>
+            <p class="arch-description">Play back the code or script recordings in a robust manner</p>
+          </div>
+          <div class="arch-arrow">↓</div> -->
+          <div class="arch-layer">
+            <div class="arch-title">Robot</div>
+            <p class="arch-description">Resilient automation execution for scalability</p>
+            <!-- <p class="arch-description">From basic scripts to reusable code and extreme scalability</p> -->
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer">
+            <div class="arch-title">Engines</div>
+            <p class="arch-description">Playwright + Puppeteer + Crawlee</p>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="arch-layer">
+            <div class="arch-title">Infrastructure</div>
+            <p class="arch-description">Apify or Self-Hosting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist CTA -->
+    <section id="waitlist" class="py-16 bg-tertiary border-t border-b" style="border-color: var(--color-border);">
+      <div class="container">
+        <div class="waitlist-content">
+          <div class="waitlist-header">
+            <h2 class="text-4xl font-black text-primary mb-4">
+              JOIN WAIT LIST
+            </h2>
+            <p class="text-lg text-secondary mb-8">
+              Unable to try it now on Apify?
+            </p>
+            <p class="text-lg text-secondary mb-8">
+              Register your interest to receive updates about project development and early access.
+            </p>
+          </div>
+
+          <form class="waitlist-form" id="waitlistForm">
+            <div class="form-row">
+              <input type="email" name="email" placeholder="your@email.com" required class="form-input">
+              <button type="submit" class="btn btn-primary">
+                Get Updates →
+              </button>
+            </div>
+
+          </form>
+
+          <div class="waitlist-decoration" aria-hidden="true">
+            <pre class="ascii-art text-xs">*** LIMITED PREVIEW ***</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section class="py-16">
+      <div class="container">
+        <div class="text-center mb-12">
+          <p class="text-xs uppercase tracking-wider text-accent mb-4 font-mono">[ GET STARTED ]</p>
+          <h2 class="text-4xl font-black text-primary">
+            READY TO AUTOMATE?
+          </h2>
+        </div>
+
+        <div class="getting-started-grid">
+          <div class="start-card">
+            <div class="start-icon" aria-hidden="true">
+              <pre class="ascii-art">(o_o)</pre>
+            </div>
+            <h3 class="start-title">Try on Apify</h3>
+            <p class="start-description">
+              Create a free account and test the automation pipeline.
+            </p>
+            <a href="https://apify.com/cyberfly" class="start-link">
+              Start Now ↗
+            </a>
+          </div>
+
+          <div class="start-card">
+            <div class="start-icon" aria-hidden="true">
+              <pre class="ascii-art">[===]</pre>
+            </div>
+            <h3 class="start-title">View on GitHub</h3>
+            <p class="start-description">
+              Explore the open-source framework and contribute.
+            </p>
+            <a href="https://github.com/cybairfly" target="_blank" class="start-link">
+              GitHub ↗
+            </a>
+          </div>
+
+          <div class="start-card">
+            <div class="start-icon" aria-hidden="true">
+              <pre class="ascii-art">{ }</pre>
+            </div>
+            <h3 class="start-title">Documentation</h3>
+            <p class="start-description">
+              Read the complete guide to using Apify Agent.
+            </p>
+            <a href="#" class="start-link">
+              Docs →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4 class="footer-column-title">Project</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+            <li><a href="#use-cases" class="footer-link">Use Cases</a></li>
+            <li><a href="#waitlist" class="footer-link">Waitlist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-column-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/cybairfly" target="_blank"class="footer-link">GitHub</a></li>
+            <li><a href="https://console.apify.com" class="footer-link">Apify Platform</a></li>
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">Examples</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-column-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="https://discord.gg/apify" class="footer-link">Discord</a></li>
+            <li><a href="https://twitter.com/apify" class="footer-link">Twitter</a></li>
+            <li><a href="#" class="footer-link">Contributors</a></li>
+            <li><a href="#" class="footer-link">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-column-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">License (MIT)</a></li>
+            <li><a href="#" class="footer-link">Privacy</a></li>
+            <li><a href="#" class="footer-link">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          ©2025 ✶ Apify Agent · Built with Apify
+        </p>
+        <div class="footer-badge">
+          <span class="font-mono text-xs">[ OPEN SOURCE ]</span>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <script>
+    // Set your Google Sheet Apps Script deployment URL here
+    // Follow the step-by-step guide in GOOGLE_SHEET_SETUP.html
+    window.GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbylsXYckstuqTxhjSS_Xf_mlpV6ercrHSxOh04mJ5o2TrpXjwvCdq4BlbZ2evuwB-Po/exec';
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

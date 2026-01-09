@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Framework Example</title>
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/utilities.css">
+  <style>
+    /* Component Styles */
+    .hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8rem 0;
+      overflow: hidden;
+    }
+    
+    .hero-content {
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero-badge {
+      font-size: var(--text-xs);
+      font-family: var(--font-mono);
+      color: var(--color-accent-primary);
+      margin-bottom: var(--space-4);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .hero-actions {
+      display: flex;
+      gap: var(--space-4);
+      justify-content: center;
+      margin-top: var(--space-8);
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-3) var(--space-6);
+      font-size: var(--text-base);
+      font-weight: var(--weight-semibold);
+      text-decoration: none;
+      border: var(--border-width) solid transparent;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all var(--duration-fast) var(--ease-out);
+    }
+    
+    .btn-primary {
+      color: var(--color-bg-primary);
+      background: var(--color-accent-primary);
+      border-color: var(--color-accent-primary);
+    }
+    
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--color-accent-primary);
+      box-shadow: var(--shadow-glow);
+    }
+    
+    .btn-secondary {
+      color: var(--color-text-primary);
+      background: transparent;
+      border-color: var(--color-border-hover);
+    }
+    
+    .btn-secondary:hover {
+      border-color: var(--color-accent-primary);
+      color: var(--color-accent-primary);
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin: var(--space-16) 0;
+    }
+    
+    .feature-card {
+      background: var(--color-bg-tertiary);
+      border: var(--border-width) solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      transition: all var(--duration-base) var(--ease-out);
+    }
+    
+    .feature-card:hover {
+      border-color: var(--color-accent-primary);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+    
+    .feature-ascii {
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      color: var(--color-accent-primary);
+      margin-bottom: var(--space-4);
+      line-height: 1.2;
+    }
+    
+    .ascii-decoration {
+      font-family: var(--font-mono);
+      color: var(--color-text-muted);
+      opacity: 0.3;
+      margin: var(--space-4) 0;
+    }
+    
+    @media (max-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 60vh;
+        padding: 6rem 0;
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">[ NEW FRAMEWORK ]</div>
+        
+        <h1 class="text-5xl font-black text-primary mb-4">
+          BUILD MODERN
+        </h1>
+        
+        <h2 class="text-3xl font-bold text-primary mb-6">
+          DEVELOPER EXPERIENCES
+        </h2>
+        
+        <p class="text-lg text-secondary" style="max-width: 700px; margin: 0 auto;">
+          A complete design system inspired by modern developer tools. 
+          Featuring playful ASCII art, minimal aesthetics, and powerful components.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">
+            Get Started →
+          </a>
+          <a href="#" class="btn btn-secondary">
+            View Docs
+          </a>
+        </div>
+        
+        <div class="ascii-decoration" aria-hidden="true">
+          <pre>/RUN >> (=^･^=)</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16">
+    <div class="container">
+      <div class="text-center mb-12">
+        <p class="text-xs uppercase tracking-wider text-accent mb-4 font-mono">[ FEATURES ]</p>
+        <h2 class="text-4xl font-black text-primary">
+          EVERYTHING YOU NEED
+        </h2>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-ascii" aria-hidden="true">
+            <pre>╔═══╗
+║ ✓ ║
+╚═══╝</pre>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3">
+            Modular Components
+          </h3>
+          <p class="text-sm text-secondary">
+            Reusable, composable components built for flexibility and ease of use.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-ascii" aria-hidden="true">
+            <pre>| / - \
+>>> >>></pre>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3">
+            ASCII Animations
+          </h3>
+          <p class="text-sm text-secondary">
+            Playful character-based animations that add personality to your designs.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-ascii" aria-hidden="true">
+            <pre>[===]
+(o_o)</pre>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3">
+            Developer First
+          </h3>
+          <p class="text-sm text-secondary">
+            Technical aesthetic with monospace fonts and terminal-inspired elements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 border-t border-b" style="border-color: var(--color-border);">
+    <div class="container text-center">
+      <h2 class="text-4xl font-black text-primary mb-4">
+        START BUILDING TODAY
+      </h2>
+      <p class="text-lg text-secondary mb-8">
+        Use this framework as a foundation for your next project.
+      </p>
+      <div class="flex gap-4 justify-center">
+        <a href="#" class="btn btn-primary">
+          Get Started →
+        </a>
+      </div>
+      <div class="ascii-decoration mt-8" aria-hidden="true">
+        <pre class="text-xs">*** BUILD SOMETHING AMAZING ***</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 mt-20 border-t" style="background: var(--color-bg-secondary); border-color: var(--color-border);">
+    <div class="container">
+      <div class="text-center">
+        <p class="text-xs text-tertiary">
+          ©2025 ✶ Design Framework
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
